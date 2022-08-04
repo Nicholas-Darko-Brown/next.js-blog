@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Header = () => {
   return (
     <header className="bg-zinc-700 text-gray-50">
@@ -6,13 +8,15 @@ const Header = () => {
                 <input type="text" placeholder="Search..." className="mt-1 block w-60 px-3 py-2 border border-slate-300 rounded text-sm shadow-sm placeholder-slate-200" />
             </div>
             <div className="shrink w-80 sm:order-2">
-                <a>Design</a>
+                <Link href={"/"}>
+                    <a className="font-bold uppercase text-3xl">Design</a>
+                </Link>
             </div>
             <div className="w-96 order-3 flex justify-center">
             <div className="flex gap-5">
-                <a>Facebook</a>
-                <a>Twitter</a>
-                <a>Youtube</a>
+                <Link href={"/"}><a>Facebook</a></Link>
+                <Link href={"/"}><a>Twitter</a></Link>
+                <Link href={"/"}><a>Youtube</a></Link>
             </div>
             </div>
         </div>
