@@ -1,9 +1,8 @@
-import Header from "../components/Header/Header";
+import Layout from "../layout/Layout/Layout";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-    </div>
+    <Layout>
+    </Layout>
   )
 }
